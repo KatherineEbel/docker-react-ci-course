@@ -1,0 +1,11 @@
+language: generic
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t kat201/docker-react-ci-course -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true kat201/docker-react-ci-course npm run test -- --coverage
+
