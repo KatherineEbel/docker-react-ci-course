@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Goodbye from my docker container!!
+          AWS beanstalk App
         </p>
         <a
           className="App-link"
